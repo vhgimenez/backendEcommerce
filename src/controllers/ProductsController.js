@@ -9,6 +9,18 @@ class ProductsController {
         
     };
 
+    async getProductsMale(req, res) {
+        const products = await knex("products")
+            .where("gender", "like", "%masculino%");
+        res.status(200).json(products);
+    }
+
+    async getProductsFemale(req, res) {
+        const products = await knex("products")
+            .where("gender", "like", "%feminino%");
+        res.status(200).json(products);
+    }
+
     async getProductById(req, res) {
         const { id } = req.params;
 
