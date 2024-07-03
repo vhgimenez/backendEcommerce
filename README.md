@@ -1,7 +1,7 @@
 
 # Backend E-commerce
 
-Esse é o backend de um projeto de e-commerce de tênis desenvolvido com Node
+Esse é o backend de um projeto de e-commerce de tênis desenvolvido com Node.
 
 ## Ferramentas Utilizadas
 
